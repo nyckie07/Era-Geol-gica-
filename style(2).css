@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #f8f8f8; 
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+}
+
+/*conteiner da calculadora*/
+.calcul {
+    background-color: #f8ce8a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(48, 42, 13, 0.742); 
+    padding: 20px; 
+    width: 300px; 
+    text-align: center;
+}
+
+/*estilo das etiquetas*/
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+/*campos de entrada */
+input {
+    width: calc(100% - 10px); 
+    margin-bottom: 10px; 
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+}
+
+/*botão de calcular */
+button {
+    background-color: #b88532;
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 10px; 
+}
+
+/*conteiner de resultados */
+.result {
+    margin-top: 20px; 
+    padding: 10px;
+    border: 1px solid #126716; 
+    border-radius: 5px; 
+    background-color: #d1fbc4; 
+}
+
+/*parágrafos dentro do conteiner */
+.result p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/*responsividade*/
+
+@media only screen and (max-width: 600px) {
+    .calcul {
+        width: 80%; 
+    }
+
+    input, button {
+        width: 100%; 
+    }
+
+    .result p {
+        font-size: 14px; 
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .calcul {
+        width: 60%; 
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .calcul {
+        width: 40%;
+    }
+}
